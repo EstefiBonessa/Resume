@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "text": "I am Estefania. I'm a junior <strong>javascript</strong> developer, with great knowledge in <strong>frontend</strong> and <strong>backend</strong>.",
+      "tech": "I use mostly React, Redux, Node, Express, Sequalize, GraphQL, MongoDB and in process of learning React Native with Expo",
+      "tskills": [
+        "Javascript",
+        "Node Js",
+        "React",
+        "Redux",
+        "Express",
+        "PostgreSQL",
+        "Sequelize",
+        "GraphQL",
+        "HTML"
+      ],
+      "design": "I have deep knowledge of graphic design, since I´ve studied Set and Costume Design, and worked for 10 years in theatre and advertising",
+      "skills": [
+        "CCS3",
+        "CSS Preprocessors: SASS, LESS",
+        "BOOTSTRAP",
+        "Material UI",
+        "Photoshop",
+        "Illustrator",
+        "AutoCAD",
+        "Sketch Up"
+      ]
+    },
+    {
+      "subtitle": "Education",
+      "henry": "Henry Bootcamp (700 hs) <p><ul ><li>Algoritms, data structures,</li><li>Javascript ES6+, Less</li><li>React, Redux,</li><li> Node, Express,</li><li>Postgres, Sequalize, GraphQL, Apollo, Mongoose, MongoDB</li></ul>",
+      "coder": "Web Development  - CoderHouse (36 hs) - August-October 2020",
+      "back": "Set And Costume Design Degree - At Thesis stage (UNA - Universidad Nacional del Arte - Buenos Aires - Argentina )"
+    },
+    {
+      "subtitle": "Work Experience",
+      "bomba": "Full Stack Developer - (since October 2020) E-Commmerce for stationery products. Working with technologies such as React, Redux, Express, PostgreSQL, Sequelize",
+      "linkbomba": "https://bomba-ecommerce.web.app/",
+      "apm": "Front End Developer - (since December 2020) Mobile App for medical advertising agent. Working with technologies such as React Native, Expo and Apollo Client ",
+      "asDesigner": "Before getting into Web Development I've been working for more than 10 years in Set and Costume Design, you can check out mi Portfolio:",
+      "link": "https://estefibonessa.github.io/Paginaweb/"
+    }
+  ]
+}
