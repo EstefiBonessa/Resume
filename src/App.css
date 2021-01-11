@@ -1,38 +1,254 @@
-.App {
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.img {
+  margin: 40px;
+  width: 400px;
+  height: 400px;
+  background-size: 100%;
+  background-position-x: 100;
+  background-position: bottom;
+  background-image: url("./tif.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 500;
+  z-index: 400;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.imgs {
+  width: 50vw;
+  height: 100vh;
+  background-size: 100%;
+  background-position-x: 100;
+  background-position: bottom;
+  background-image: url("./tefiid.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  z-index: 400;
+  overflow: hidden;
+  border-radius: 50%;
+  border: solid 2px white;
+}
+
+.box {
+  /*position: relative;*/
+  /*margin: auto;*/
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  z-index: 50;
+  overflow: hidden;
+}
+
+.blob {
+  position: absolute;
   text-align: center;
+  z-index: 100;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  padding-top: 10%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cont {
+  margin-top: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.blob-1 {
+  height: 20rem;
+  width: 20rem;
+  background-color: rgba(49, 158, 158, 0.5);
+  top: calc(50% - 5rem);
+  right: calc(50% - 5rem);
+  animation: blob 10s ease-in-out infinite, float 175s ease-in-out infinite;
+}
+
+.blob-1 .cont {
+  visibility: hidden;
+}
+
+.blob-1:hover {
+  /*background: rgba(42, 44, 45, 0.185);*/
+
+  top: calc(50% - 5rem);
+  right: calc(50% - 5rem);
+  transition: 2s;
+}
+
+.blob-1 .cont:hover {
+  visibility: visible;
+}
+
+.blob-2 {
+  height: 55rem;
+  width: 55rem;
+
+  background: /*#383536;*/ #a26769;
+  top: 0%;
+  right: 10%;
+  border-radius: 65% 60% 35% 50% / 65% 38% 75% 36%;
+  animation: blob 8s ease-in-out infinite, float 125s ease-in-out infinite;
+}
+
+.blobs-2 {
+  height: 55rem;
+  width: 55rem;
+
+  background: /*#383536;*/ #36334d;
+  top: 0%;
+  right: 10%;
+  border-radius: 65% 60% 35% 50% / 65% 38% 75% 36%;
+  animation: blob 8s ease-in-out infinite, float 125s ease-in-out infinite;
+}
+.blob-3 {
+  height: 8rem;
+  width: 8rem;
+  background: #777575c9;
+  top: 6%;
+  right: 85%;
+  border-radius: 65% 60% 35% 50% / 65% 38% 75% 36%;
+  animation: blob 12s ease-in-out infinite, float 125s ease-in-out infinite;
+}
+
+.blob-4 {
+  height: 10rem;
+  width: 10rem;
+  background: #777575c9;
+  top: 5%;
+  right: 85%;
+  border-radius: 65% 60% 35% 50% / 65% 38% 75% 36%;
+  animation: blob 5s ease-in-out infinite, float 125s ease-in-out infinite;
+}
+
+@keyframes blob {
+  0% {
+    border-radius: 65% 60% 35% 50% / 65% 38% 75% 36%;
+  }
+  25% {
+    border-radius: 89% 54% 62% 42% / 83% 45% 75% 63%;
+  }
+  50% {
+    border-radius: 65% 60% 35% 50% / 65% 38% 75% 36%;
+  }
+  25% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+  50% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+  75% {
+    border-radius: 89% 54% 62% 42% / 83% 45% 75% 63%;
+  }
+  100% {
+    border-radius: 65% 60% 35% 50% / 65% 38% 75% 36%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+span {
+  background: rgb(227, 237, 247);
+  border-radius: 18px;
+  display: inline-block;
+  min-width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 20px;
+}
+
+span > i {
+  margin-top: 12px;
+}
+
+.outer-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 728px) {
+  .outer-container {
+    zoom: 2;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.button.off {
+  color: rgba(49, 69, 106, 0.35);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0);
+  animation: clicked 0.2s ease;
+}
+
+@keyframes clicked {
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+.button.on {
+  color: rgb(49, 69, 106);
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: inset 4px 4px 6px -1px rgba(49, 69, 106, 0.2),
+    inset -4px -4px 6px 1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0 rgba(255, 255, 255, 1), 0.5px 0.5px 0 rgba(0, 0, 0, 0.15),
+    0px 12px 120px -10px rgba(0, 0, 0, 0.05);
+  animation: clickedIn 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes clickedIn {
+  50% {
+    transform: scale(0.98);
+  }
+}
+
+.outer-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 200%;
+  z-index: 2;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgb(227, 237, 247),
+    rgb(227, 237, 247)
+  );
+  animation: animate 3s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -200%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .img {
+    margin: 40px;
+    width: 200px;
+    height: 400px;
+    background-size: 100%;
+    background-position-x: 100;
+    background-position: bottom;
+    background-image: url("./tif.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 500;
+    z-index: 400;
+    overflow: hidden;
+    border-radius: 50%;
   }
 }
