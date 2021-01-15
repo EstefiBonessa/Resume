@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Pencil from "../Icons/Pencil";
 
 const axios = require("axios").default;
-let design;
 
 export default function DesignSkills({ setDSkills, dSkills }) {
   const [data, setData] = useState("");

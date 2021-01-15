@@ -14,10 +14,9 @@ import WorkExp from "./WorkExp";
 import Contact from "./Contact";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
-const axios = require("axios").default;
 
 export default function Page() {
-  const [mode, setMode] = useState(false);
+  const [mode] = useState(false);
   const [dSkills, setDSkills] = useState(false);
   const [tSkills, setTSkills] = useState(false);
   const [works, setWorks] = useState(false);
@@ -43,10 +42,7 @@ export default function Page() {
         <p className={s.p}>Hi! I am</p>
         <h1 className={s.title}> Estefi</h1>
         <p className={s.p}>Full Stack Web Developer</p>
-        <button
-          className={s.mode}
-          onClick={() => (handleMode(), console.log(mode))}
-        >
+        <button className={s.mode} onClick={() => handleMode()}>
           {mode ? (
             <Sun color="white" size="50" />
           ) : (

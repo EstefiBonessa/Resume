@@ -31,18 +31,6 @@ export default function Contact({ setContact, contact }) {
     });
   };
 
-  const toastifyFail = () => {
-    toast.error("Form failed to send!", {
-      position: "bottom-right",
-      autoClose: 5000,
-      hideProgressBar: true,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: false,
-      className: "submit-feedback fail",
-    });
-  };
-
   const handleChange = (e) => {
     setInput({
       ...input,
